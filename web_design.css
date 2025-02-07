@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 100%;
+     width: 100%; 
+    line-height: 1.5;
+    
+    background-image: url("pro_images/pexels-drphotographer152-30263684.jpg"); 
+    background-repeat:no-repeat;
+   
+}
+
+/* PT Sans Font Style */
+.pt-sans-regular {
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.cormorant-regular {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* You can adjust this between 300 and 700 */
+    font-style: normal;
+  }
+
+
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(7, 44, 74);
+    height: 70px;
+    
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e7ece7db;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #ff6347; /* Tomato color */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+h1, h2 {
+    color:wheat;
+    margin-bottom: 10px;
+    font-family: "Cormorant", serif; /* Apply Cormorant font */
+    font-size:45px;
+    font-weight: bold; /* Moderate weight */
+}
+
+ p {
+    color:white;
+    font-family: "Cormorant", serif; /* Apply Cormorant font */
+    
+    font-size: 32px;
+    font: weight 600px; /* Regular weight */
+ }
+
+
+
+/* Add PT Sans font to specific sections or elements */
+section h1,
+section h2,
+section p {
+    font-family: "Cormorant", serif;
+}
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  .rating-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.star {
+    font-size: 40px;
+    cursor: pointer;
+    color: #d3d3d3;
+}
+
+.star:hover,
+.star.selected {
+    color: gold;
+}
+
+.rating-output {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+#contact {
+    color: white;
+    /* background-color: #333; */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.loading-indicator {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #333;
+}

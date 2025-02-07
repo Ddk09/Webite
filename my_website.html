@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Website</title>
+    <!-- External Styles -->
+    <link rel="stylesheet" href="web_design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">MyWebsite</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" data-section="home">Home</a></li>
+                <li><a href="#" data-section="about">About</a></li>
+                <li><a href="#" data-section="services">Services</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       
+       
+            <section id="about" class="pt-sans-regular" style="display: none;">
+            <h2 style="color: white;">About Us</h2>
+            <p>I am DIVYA KUMARI. I am a Pre-final Computer Science student.<br>
+            Problem Solving is one of my skills. Apart from that i am interested in FrontEnd, MySQL,AI/ML,<BR>
+            DBMS,Computer Networking.<br>My proficient soft skills are that i am a good speaker and a listner,i have good communication skills.<br>Well I am still in learning process and still developing so keep fighting💪🏼.</p>
+            <div class="row">
+                <div class="col-sm-6">
+            <div class="card" style="background-color:rgb(7, 87, 87);">     
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: aliceblue;">CODECHEF PROFILE</h5>
+                      <p class="card-text" style="color:white;size: 18px;" >I HAVE SOLVED 100+ QUESTIONS HERE.</p>
+                      <a href="https://www.codechef.com/users/divya069/#about" class="btn btn-primary" >CLICK</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card" style="background-color: rgb(7, 87, 87);">
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: aliceblue;">LEETCODE PROFILE</h5>
+                      <p class="card-text" style="color:white;size: 18px;" >JUST STARTED BUT WILL ACHIEVE 100+ SOON</p>
+                      <a href="https://leetcode.com/u/div0910kumari/#about" class="btn btn-primary" >CLICK</a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              
+              </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="pt-sans-regular" style="display: none;">
+            <h2 style="color: white;">Services</h2>
+            <p>Explore our wide range of services either it is your online study material,<br>good music channel,anime channel.LOOK FORWARD FOR IT.</p>
+            <p>FOR YOUR CODING JOURNEY<BR>
+            <a href="https://www.youtube.com/@CodeWithHarry" target="_blank" rel="noopener noreferrer">https://www.youtube.com/@CodeWithHarry</a><br>
+            <a href="https://www.youtube.com/@CodeHelp" target="_blank" rel="noopener noreferrer">https://www.youtube.com/@CodeHelp</a><br>
+            <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer">https://www.geeksforgeeks.org/</a><br></p>
+            <p>FOR MUSIC<BR>
+            <A href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">www.youtube.com</A><br>
+            <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">www.spotify.com</a><br>
+            <a href="https://www.jiosaavn.com/" target="_blank" rel="noopener noreferrer">www.jiosaavn.com</a><br></p>
+            <p>FOR ANIME<br>
+                <a href="https://www.youtube.com/@MuseAsia" target="_blank" rel="noopener noreferrer">https://www.youtube.com/@MuseAsia</a><br>
+                <a href="https://www.youtube.com/@AniOneAsia" target="_blank" rel="noopener noreferrer">https://www.youtube.com/@AniOneAsia</a><br>
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="pt-sans-regular" style="display: none;">
+            <h2 style="color: white;">Contact Us</h2>
+            <p>Feel free to reach out for inquiries.<br>
+                Email: DIV0910KUMARI@GMAIL.COM<br>
+                Phone no.📞:7854965256
+            </p></section>
+            <section id="rating-section"  class="rating-container" style="display: none;">
+                <h2>Rate the Website</h2>
+                <div class="stars" id="stars">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <div class="rating-output">
+                    <p>Your Rating: <span id="rating-value">0</span> stars</p>
+                </div>
+                <button onclick="submitRating()">Submit Rating</button>
+            
+        </section>
+       
+          <section id="home" class="pt-sans-regular">
+            <h1 style="color: wheat ">Welcome to Artemis ~ My Personal AI</h1>
+            <p>I am an AI enthusiast, and I am looking forward to learning more about AI.<br>
+                I will be keeping track of all my works here.<br>
+                Let's do it! 👍🩷</p>
+                <img src="pro_images/cube-14564_256.gif" alt="...">
+                <P>I am also an huge anime fan. These are some of my fav characters. You can check it out and read while eating some snacks🍕🍔🍟</P>
+      
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card" style="background-color:black;" data-link="https://en.wikipedia.org/wiki/Satoru_Gojo" >
+                <img src="pro_images/gojo.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">SATORU GOJO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background-color:black;" data-link="https://en.wikipedia.org/wiki/Roronoa_Zoro" >
+                <img src="pro_images/zoro.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">RORONOA ZORO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background-color:black;" data-link="https://en.wikipedia.org/wiki/Sasuke_Uchiha" >
+                <img src="pro_images/12564.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">SASUKE UCHIHA</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background-color:black;" data-link="https://en.wikipedia.org/wiki/Kakashi_Hatake" >
+                <img src="pro_images/1337463.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">KAKASHI HATAKE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="loading-indicator" id="loadingIndicator" style="color: #7ceb1c;">Loading, please wait...</div>
+          </section>
+       
+        
+        
+    </main>
+
+    <!-- External JavaScript -->
+    <script src="webscr.js"></script>
+    <script src="webscr_card.js"></script>
+    <script src="webscr_links.js"></script>
+    <script src="webscr_load.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
